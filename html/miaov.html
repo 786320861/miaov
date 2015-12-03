@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>getComputedStyle</title>
+    <style type="text/css">
+        #div1{
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+    </style>
+    <script type="text/javascript" src="../js/miaov.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#div1").style.cssText = "width: 200px;height:300px";
+            alert(getStyle($("#div1"), "marginLeft"));
+        });
+        function getStyle(obj, attr){
+            return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr];
+        }
+    </script>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+</body>
+</html>
