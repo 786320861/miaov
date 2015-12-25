@@ -1,0 +1,63 @@
+@import "common";
+body{
+}
+#container{
+  width: 700px;
+  margin: 100px auto;
+}
+*{
+  @include boxSizing();
+}
+.flexBox{
+  background: lightgoldenrodyellow;
+  padding: 20px;
+  @include flexBox();
+  .textArea, .copyArea{
+    padding: 10px;
+    flex: 5;
+    height: 300px;
+  }
+  .textArea {
+    background: lightpink;
+    textarea{
+      width: 100%;
+      height: 100%;
+      resize: none;
+      border: 0;
+      background: lightpink;
+    }
+  }
+  .copyArea{
+    background: lightblue;
+  }
+  .controlArea{
+    flex: 3;
+    text-align: center;
+    margin: 0 20px;
+    .beginCopy{
+      height: 36px;
+      background: orange;
+      font-size: 18px;
+      cursor: pointer;
+      border: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    p{
+      margin-bottom: 10px;
+    }
+    ul{
+      display: none;
+    }
+    li{
+      float: left;
+      width: 10px;
+      height: 10px;
+      background: lightsalmon;
+      margin-right: 3px;
+      &.active{
+        background: deeppink;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "common";
+*{
+  @include boxSizing();
+}
+#container{
+
+}
+
+#content{
+  margin: 200px auto;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  border: 1px solid #333333;
+  overflow: hidden;
+  padding: 0px 30px 0px 20px;
+}
+#contentInner{
+  width: 100%;
+  height: auto;
+  position: relative;
+  line-height: 1.6;
+}
+#scrollOuter{
+  width: 20px;
+  height: 100%;
+  background: darkgray;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#scrollInner{
+  width: 20px;
+  height: 30px;
+  top: 20px;
+  background: lightsalmon;
+  position: absolute;
+}
+#scrollTop, #scrollBottom{
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  background: lightgray;
+  cursor: default;
+}
+#scrollTop:hover, #scrollBottom:hover{
+  background: gray;
+}
+#scrollBottom{
+  bottom: 0px;
+}

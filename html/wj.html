@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function(){
+            foo();
+            var body = document.body;
+            body.onclick = foo;
+            var obj = {
+
+            };
+            foo.apply(obj);
+            function foo() {
+                this.a = 5;
+                console.log(this);
+            }
+
+//            var obj = new foo();
+//            console.log(obj.a)
+        }
+    </script>
+    <style type="text/css">
+        #test{
+            width: 600px;
+            height: 600px;
+            border: 1px solid #cccc99;
+            text-align: center;
+        }
+        .tag{
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="test">
+    <span class="tag"></span>
+    <img src="../img/1.jpg">
+</div>-->
+
+<ul>
+    <li class="test">yi</li>
+    <li class="test">er</li>
+    <li class="test">san</li>
+    <li class="test">si</li>
+</ul>
+<div class="div">yi </div>
+<div class="div"> er</div>
+<div class="div">san</div>
+<div class="div">si</div>
+<script src="../js/miaov.js"></script>
+<script src="../js/diaoluo.js"></script>
+
+</body>
+</html>

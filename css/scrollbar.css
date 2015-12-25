@@ -1,0 +1,98 @@
+html {
+  font-size: 10px; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'microsoft yahei';
+  color: #333333; }
+
+ul, li, ol, p, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal; }
+
+ul, li, ol {
+  list-style: none; }
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.lineUl li {
+  float: left; }
+
+input, button, textarea, select {
+  font-family: inherit; }
+
+button, select {
+  cursor: pointer; }
+
+button:focus, input:focus {
+  outline: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#content {
+  margin: 200px auto;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  border: 1px solid #333333;
+  overflow: hidden;
+  padding: 0px 30px 0px 20px; }
+
+#contentInner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  line-height: 1.6; }
+
+#scrollOuter {
+  width: 20px;
+  height: 100%;
+  background: darkgray;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+#scrollInner {
+  width: 20px;
+  height: 30px;
+  top: 20px;
+  background: lightsalmon;
+  position: absolute; }
+
+#scrollTop, #scrollBottom {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  background: lightgray;
+  cursor: default; }
+
+#scrollTop:hover, #scrollBottom:hover {
+  background: gray; }
+
+#scrollBottom {
+  bottom: 0px; }
+
+/*# sourceMappingURL=scrollbar.css.map */

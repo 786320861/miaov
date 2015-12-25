@@ -1,0 +1,41 @@
+@import "common";
+
+*{
+  @include boxSizing();
+}
+#container{
+  width: 700px;
+  padding: 10px;
+  margin: 100px auto;
+  background: #efefef;
+}
+#showFont, #fontIpt{
+  width: 100%;
+  border: 1px solid #cccccc;
+  height: 100px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  background: #ffffff;
+  padding: 10px;
+}
+#showFont{
+  font-size: 34px;
+}
+#fontIpt{
+  resize: none;
+  max-width: 100%;
+  max-height: 60px;
+}
+#fontChose{
+  width: 200px;
+  margin-bottom: 15px;
+  border-radius: 0;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+}
+#ok{
+  width: 100px;
+  height: 36px;
+  cursor: pointer;
+}

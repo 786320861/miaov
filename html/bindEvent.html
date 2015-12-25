@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>绑定事件测试</title>
+    <style type="text/css">
+        div{
+            padding: 40px;
+            background: pink;
+        }
+        #div2{
+            background: lightblue;
+        }
+    </style>
+    <script type="text/javascript" src="../js/miaov.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            function fn1(){
+                alert(this);
+            }
+            bindEvent(document, "click", fn1);
+        });
+    </script>
+</head>
+<body>
+    <div id="div1"><div id="div2"></div></div>
+</body>
+</html>

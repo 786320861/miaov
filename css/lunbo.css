@@ -37,6 +37,15 @@ a:hover {
 .lineUl li {
   float: left; }
 
+input, button, textarea, select {
+  font-family: inherit; }
+
+button, select {
+  cursor: pointer; }
+
+button:focus, input:focus {
+  outline: 0; }
+
 #div1 {
   width: 600px;
   margin: 0 auto;
@@ -68,5 +77,12 @@ a:hover {
     left: -35px; }
   #div1 #next {
     right: -35px; }
+
+.diaoluo {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: absolute;
+  top: 100px; }
 
 /*# sourceMappingURL=lunbo.css.map */

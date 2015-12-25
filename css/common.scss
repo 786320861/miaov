@@ -40,3 +40,53 @@ a:hover{
     float: left;
   }
 }
+input,button,textarea,select{
+  font-family: inherit;
+}
+button,select{
+  cursor: pointer;
+}
+button:focus, input:focus{
+  outline: 0;
+}
+$black: #000;
+$pink: lighten(pink, 20%);
+@mixin boxSizing($val:border-box){
+  -webkit-box-sizing: $val;
+  -moz-box-sizing: $val;
+  box-sizing: $val;
+}
+@mixin flexBox(){
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+@mixin alignSelf($val:flex-start){
+  -webkit-align-self: $val;
+  -moz-align-self: $val;
+  -ms-align-self: $val;
+  align-self: $val;
+}
+@mixin justifyContent($val:flex-start){
+  -webkit-justify-content: $val;
+  -moz-justify-content: $val;
+  -ms-justify-content: $val;
+  justify-content: $val;
+}
+@mixin order($val){
+  -webkit-order: $val;
+  -moz-order: $val;
+  -ms-order:$val;
+  order: $val;
+}
+@mixin coord($top:auto,$left:auto,$right:auto,$bottom:auto){
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+@mixin size($w, $h){
+  width: $w;
+  height: $h;
+}
